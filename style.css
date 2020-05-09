@@ -1,0 +1,218 @@
+/*style font */
+
+h1{
+    font-family: 'Roboto';
+    font-size: 3.5em;
+}
+h2 
+{
+    font-family: 'Roboto';
+    font-size: 2.5em;
+}
+h3 
+{
+    font-family: 'Roboto';
+    font-size: 1.5em;
+}
+h4
+{
+    font-family: 'Roboto';
+    font-size: 1.5em;
+}
+h5
+{
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+p
+{
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+em
+{
+    font-family:'Roboto';
+    font-size: 1.2em;
+}
+
+body{
+    margin:0;
+    color:#4a4a4a;
+    background-color: azure;
+    }
+body ul{
+    font-family: Roboto;
+}
+.content{
+    display: flex;
+    background-color: white;
+    width: 1190px;
+    margin: auto;
+    border: solid 1px rgb(54, 53, 53);
+}
+.section-gauche{
+    display: flex;
+    background-color: #448AFF;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 20px;
+    flex: 1;
+}
+.photo-id{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.photo-id>img{
+    border-radius: 50%;
+    width: 200px;
+    border: 4px solid rgba(64,64,64,.5);
+}
+.section-gauche h2{
+    background-color: #404040;
+    color:#448AFF;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.section-gauche section{
+    margin-top:  25px;
+    margin-bottom: 25px;
+}
+.contact{
+    order: 1;
+}
+.contact ul{
+    margin-left: 10px;  
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact li{
+    list-style-type: none; 
+    margin-top: 20px;   
+}
+.contact a:link{
+    color:white;
+    text-decoration: none;
+}
+.contact a:hover{
+    color: black;
+}
+.apropos{
+    order: 2;
+    flex: 1;
+}
+.apropos p{
+    margin-top: 30px;
+    margin-left: 46px;
+    margin-right: 46px;
+    font-size: 1em;
+    text-align:justify; 
+}
+.loisir{
+    order: 3;
+    }
+.icones{
+    display: flex;
+    justify-content: space-around;
+    font-size: 3em;
+    margin:2%;
+    padding: 2%;
+    min-width:40px;
+    opacity: 0.9;
+}
+
+/* section droite */
+.section-droite{
+    margin-top:50px;
+    margin-left:5%;
+    margin-right:5%;
+    width: 750px;
+}
+.section-droite h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: -25px;
+}
+.section-droite h2{
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: -3px;
+}
+.section-droite h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.section-droite hr{
+    border-bottom: 2px solid #448AFF;
+}
+.entete span{
+    color: #448AFF; 
+}
+.tiret{
+    width: 77px;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+.fa-graduation-cap, .fa-briefcase, .fa-pencil-alt{
+    float: left;
+    margin-right: 30px;
+    color: #448AFF;
+    font-size: 1.3em;
+}
+.fa-dot-circle{
+    float: left;
+    margin-right: 20px;
+}
+.formation{
+    margin-top: 100px;
+}
+.formation ul{
+    padding-left: 2px;
+}
+.formation li{
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    list-style: none;
+}
+.date
+{
+    width: 25%;
+    margin-left:0px;
+    margin-right:30px;
+    
+}
+.lieu
+{
+    width: 75%;
+}
+.lieu p {
+    text-align: justify;
+}
+.experience ul{
+    padding-left: 2px;
+}
+.experience li{
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    list-style: none;
+}
+.recommandation{
+    list-style-type: none;
+    font-size: 1.2em;
+    margin-top: 50px; 
+    padding-left: 2px;
+}
+.recommandation div{
+    display:flex;
+    flex-direction: row;
+}
+.recommandation li{
+    margin-right: 160px;
+}
