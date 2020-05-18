@@ -17,7 +17,7 @@ h3
 h4
 {
     font-family: 'Roboto';
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 h5
 {
@@ -36,6 +36,7 @@ em
 }
 
 body{
+    font-family:'Roboto';
     margin:0;
     color:#4a4a4a;
     background-color: azure;
@@ -47,8 +48,12 @@ body ul{
     display: flex;
     background-color: white;
     width: 1190px;
-    margin: auto;
-    border: solid 1px rgb(54, 53, 53);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 2px 8px 5px #020727; 
+    box-shadow: 0px 2px 8px 3px #020727;
 }
 .section-gauche{
     display: flex;
@@ -88,11 +93,13 @@ body ul{
     margin-left: 10px;  
     margin-top: 35px;
     font-size: 18px;
-    font-weight: 500;
 }
 .contact li{
     list-style-type: none; 
     margin-top: 20px;   
+}
+.contact>ul>li::first-line{
+    font-weight: bold;
 }
 .contact a:link{
     color:white;
@@ -100,6 +107,9 @@ body ul{
 }
 .contact a:hover{
     color: black;
+}
+.contact a:visited{
+    color: white;
 }
 .apropos{
     order: 2;
@@ -160,7 +170,7 @@ body ul{
 }
 .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt{
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
     color: #448AFF;
     font-size: 1.3em;
 }
@@ -180,12 +190,17 @@ body ul{
     width: auto;
     list-style: none;
 }
+.formation h4{
+    text-transform: uppercase;
+}
+.formation h5{
+    font-weight: normal;
+}
 .date
 {
     width: 25%;
     margin-left:0px;
     margin-right:30px;
-    
 }
 .lieu
 {
@@ -203,6 +218,12 @@ body ul{
     width: auto;
     list-style: none;
 }
+.experience h4{
+    text-transform: uppercase;
+}
+.experience h5{
+    font-weight: normal;
+}
 .recommandation{
     list-style-type: none;
     font-size: 1.2em;
@@ -212,7 +233,58 @@ body ul{
 .recommandation div{
     display:flex;
     flex-direction: row;
+    margin-top: -27px;
 }
 .recommandation li{
-    margin-right: 160px;
+    margin-right: 100px;
+}
+.recommandation a{
+    color: #448AFF;
+}
+.recommandation>div>li>p:nth-child(1){
+    font-weight: bold;
+}
+
+@media all and (max-width: 800px){
+    .content{
+            width: 80%;
+            margin: 0;
+            flex-direction: column-reverse;
+    }
+    .section-gauche{
+        width: auto;
+
+    }
+    .section-droite{
+        width: auto;        
+    }
+    .section-droite h1{
+        font-size: 1.8em;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .section-droite h2{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .section-droite h3{
+        font-size: 1em;
+    }
+    .tiret{
+        display: none;
+    }
+    .section-droite ul{
+        text-align: center;
+    }
+    .date{
+        text-align: center;
+        flex-direction: row;
+    }
+    .recommandation div{
+        flex-direction: column;
+    }
+    .recommandation ul{
+        text-align: center;
+    }
+
 }
