@@ -1,15 +1,18 @@
 
+@font-face{
+    src: url("/fonts/Cabin-Regular.ttf");
+    src: url("/fonts/OldStandard-Regular.ttf");
+}
 body{
     margin:0;
     color:#4a4a4a;
     background-color:white;
     font-family: 'Cabin-Regular', sans-serif;
-    src: url("/fonts/Cabin-Regular.ttf");
+    
     }
-body ul{
-    font-family: 'OldStandard-Regular', sans-serif;
-    src: url("/fonts/OldStandard-Regular.ttf");
-}
+/* body ul{
+    font-family: 'OldStandard-Regular', serif;
+} */
     
 .content{
     display: flex;
