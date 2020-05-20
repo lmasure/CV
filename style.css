@@ -1,49 +1,16 @@
-/*style font */
-
-h1{
-    font-family: 'Roboto';
-    font-size: 3.5em;
-}
-h2 
-{
-    font-family: 'Roboto';
-    font-size: 2.5em;
-}
-h3 
-{
-    font-family: 'Roboto';
-    font-size: 1.5em;
-}
-h4
-{
-    font-family: 'Roboto';
-    font-size: 1.3em;
-}
-h5
-{
-    font-family: 'Roboto';
-    font-size: 1em;
-}
-p
-{
-    font-family: 'Roboto';
-    font-size: 1em;
-}
-em
-{
-    font-family:'Roboto';
-    font-size: 1.2em;
-}
 
 body{
-    font-family:'Roboto';
     margin:0;
     color:#4a4a4a;
-    background-color: azure;
+    background-color:white;
+    font-family: 'Cabin-Regular', sans-serif;
+    src: url("/fonts/Cabin-Regular.ttf");
     }
 body ul{
-    font-family: Roboto;
+    font-family: 'OldStandard-Regular', sans-serif;
+    src: url("/fonts/OldStandard-Regular.ttf");
 }
+    
 .content{
     display: flex;
     background-color: white;
@@ -52,8 +19,7 @@ body ul{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    -webkit-box-shadow: 0px 2px 8px 5px #020727; 
-    box-shadow: 0px 2px 8px 3px #020727;
+    border: 1px solid;
 }
 .section-gauche{
     display: flex;
@@ -81,6 +47,7 @@ body ul{
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: normal;
+    padding: 10px;
 }
 .section-gauche section{
     margin-top:  25px;
@@ -107,6 +74,7 @@ body ul{
 }
 .contact a:hover{
     color: black;
+    transition: all 0.5s;
 }
 .contact a:visited{
     color: white;
@@ -129,10 +97,13 @@ body ul{
     display: flex;
     justify-content: space-around;
     font-size: 3em;
-    margin:2%;
-    padding: 2%;
-    min-width:40px;
+    margin: 10px 20px;
     opacity: 0.9;
+}
+.icones>i{
+    border: 2px solid;
+    border-radius: 100px;
+    padding: 4%;
 }
 
 /* section droite */
@@ -156,45 +127,70 @@ body ul{
     margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 2em;
-}
-.section-droite hr{
+    font-weight: 400;
     border-bottom: 2px solid #448AFF;
+    padding-bottom: 20px;
+}
+.section-droite h4{
+    margin-bottom: -15px;
+}
+.section-droite h5{
+    margin-bottom: -5px;
+}
+.entete>h1{
+    font-size: 3.5em;
+}
+.entete h2{
+    position: relative;
 }
 .entete span{
     color: #448AFF; 
 }
-.tiret{
-    width: 77px;
-    margin-left: 0px;
-    margin-top: 2px;
+.tiret::after{
+    content:"";
+    border-bottom: solid 2px #448AFF;
+    height: 33px;
+    position: absolute;
+    width: 80px;
+    left: 0;
+    top: 0;
 }
 .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt{
-    float: left;
     margin-right: 20px;
     color: #448AFF;
     font-size: 1.3em;
 }
 .fa-dot-circle{
-    float: left;
     margin-right: 20px;
+    color: #448AFF;
 }
-.formation{
+.fa-circle{
+    margin-right: 20px;
+    font-size: 0.5em;
+    color: #448AFF;
+}
+.cv{
     margin-top: 100px;
 }
-.formation ul{
+.cv ul{
     padding-left: 2px;
 }
-.formation li{
+.cv li{
     display: flex;
     align-items: baseline;
     width: auto;
     list-style: none;
 }
-.formation h4{
+.cv h4{
     text-transform: uppercase;
 }
-.formation h5{
+.cv h5{
     font-weight: normal;
+}
+.bloc{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 .date
 {
@@ -224,67 +220,142 @@ body ul{
 .experience h5{
     font-weight: normal;
 }
-.recommandation{
-    list-style-type: none;
+.recommandations ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;   
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 15px;
+    padding-left: 0;
+}
+.recommandations li:nth-last-child(1){
+    padding-right: 130px;
+}
+.recommandations p:nth-child(1){
+    text-transform: uppercase;
     font-size: 1.2em;
-    margin-top: 50px; 
-    padding-left: 2px;
 }
-.recommandation div{
-    display:flex;
-    flex-direction: row;
-    margin-top: -27px;
-}
-.recommandation li{
-    margin-right: 100px;
-}
-.recommandation a{
-    color: #448AFF;
-}
-.recommandation>div>li>p:nth-child(1){
-    font-weight: bold;
+.recommandations p:nth-last-child(1){
+    font-size: 0.9em;
+    font-weight: normal;
 }
 
-@media all and (max-width: 800px){
+/*responsive tablette*/
+@media all and (max-width: 1350px){
     .content{
-            width: 80%;
+            width: 100%;
             margin: 0;
-            flex-direction: column-reverse;
+            flex-direction: column;
     }
     .section-gauche{
-        width: auto;
-
-    }
-    .section-droite{
-        width: auto;        
-    }
-    .section-droite h1{
-        font-size: 1.8em;
-        margin-bottom: 0px;
+        width: 100%;
+        margin-top: 200px;
         text-align: center;
     }
-    .section-droite h2{
-        font-size: 1.2em;
+    .contact ul{
+        margin: 0;
+        padding: 0;
+    }
+    .entete{
+        position: absolute;
+        top: 12px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0; 
         text-align: center;
+    }
+    .tiret::after{
+        margin-left: auto;
+        margin-right: auto;
+        left: -280px;
+        right: 0;
+        top: 4px;
     }
     .section-droite h3{
-        font-size: 1em;
-    }
-    .tiret{
-        display: none;
-    }
-    .section-droite ul{
         text-align: center;
     }
-    .date{
-        text-align: center;
-        flex-direction: row;
+    .section-droite{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
     }
-    .recommandation div{
+    .section-droite li{
+        display: flex;
         flex-direction: column;
     }
-    .recommandation ul{
+    .cv, .experience, .recommandations{
+        margin-left:10%;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    .bloc{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .recommandations ul{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        line-height: 1px;
+        text-align: center;
+        margin-left:140px;
+    }    
+}  
+
+/*responsive smartphone*/
+@media all and (max-width: 420px){
+    .section-gauche{
+        margin-top: 260px;
         text-align: center;
     }
+    h1{
+        font-size: 1.5em; 
+    }
+    .entete h2{
+        font-size: 1em;
+        line-height: 48px;
+    }
+    .tiret::after{
+        left: -112px;
+        top: 2px;
+    }
+    .bloc{
+        margin-left:40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position:relative;
+    }
+    .section-droite h3{
+        font-size: 1.5em;
+    }
+    .section-droite h4{
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    .date{
+        margin: 10px 25%;
 
+    }
+    .fa-dot-circle, .fa-circle{
+       margin-left: 103px;
+    }
+    .recommandations ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 0.8em;
+        line-height: 0.5px;
+        margin-left: 14px;
+    }        
+    .recommandations li:nth-last-child(1){
+        padding-right: 0px;
+        margin-top:20px;
+    }
 }
