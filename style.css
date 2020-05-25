@@ -349,10 +349,6 @@ body ul{
         text-align: center;
         
     }
-    .cv, .experience, .recommandations {
-        /* width: 100%; */
-        /* margin: 0; */
-    }
     .section-droite h3{
         font-size: 1.5em;
     }
