@@ -300,7 +300,7 @@ body ul{
         display: flex;
         flex-direction: column;
     }
-    .cv, .experience, .recommandations{.
+    .cv, .experience, .recommandations{
         margin: 10px 0;
     }
     .bloc{
@@ -317,7 +317,6 @@ body ul{
         text-align: center;
         justify-content: space-around;
     }    
-}  
 
 /*responsive smartphone*/
 @media all and (max-width: 420px){
