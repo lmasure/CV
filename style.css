@@ -366,11 +366,12 @@ body ul{
      }
      .lieu{
          display: block;
-         margin-left: 5%;
+         margin:auto;
+         text-align: center;
      }
      .lieu p{
          
-        text-align: center;
+        text-align: justify;
      }
     .recommandations ul{
         display: flex;
@@ -379,5 +380,8 @@ body ul{
         font-size: 0.8em;
         line-height: 0.5px;
     }        
+    .recommandations li:nth-last-child(1){
+        padding-right:0;
+    }
    
 }
