@@ -336,16 +336,23 @@ body ul{
         left: -112px;
         top: 2px;
     }
+    .cv li{
+        
+    }
     .bloc{
         /* margin-left:40px; */
-        display: flex;
+        margin: 0;
+        padding: 0;
+        display: block;
+
         flex-direction: column;
+        justify-content: center;
         text-align: center;
-        position:relative;
+        
     }
     .cv, .experience, .recommandations {
         /* width: 100%; */
-        margin: 0;
+        /* margin: 0; */
     }
     .section-droite h3{
         font-size: 1.5em;
@@ -355,13 +362,16 @@ body ul{
         font-weight: 400;
     }
     .date{
+        width: 100%;    
+     }
+     .lieu{
+         display: block;
+         margin-left: 5%;
+     }
+     .lieu p{
+         
         text-align: center;
-        /* margin: 10px 25%; */
-
-    }
-    .fa-dot-circle, .fa-circle{
-       
-    }
+     }
     .recommandations ul{
         display: flex;
         flex-direction: column;
@@ -369,7 +379,5 @@ body ul{
         font-size: 0.8em;
         line-height: 0.5px;
     }        
-    .recommandations li:nth-last-child(1){
-        
-    }
+   
 }
