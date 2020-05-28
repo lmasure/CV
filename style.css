@@ -320,6 +320,9 @@ body ul{
 
 /*responsive smartphone*/
 @media all and (max-width: 420px){
+    .content{
+        border: none;
+    }
     .section-gauche{
         margin-top: 260px;
         margin-bottom: 10px;
@@ -369,6 +372,9 @@ body ul{
      .fa-circle, .fa-dot-circle{
         margin: 0;
         margin-bottom:10px;
+     }
+     .recommandations{
+         order:2;
      }
     .recommandations ul{
         display: flex;
