@@ -322,6 +322,7 @@ body ul{
 @media all and (max-width: 420px){
     .section-gauche{
         margin-top: 260px;
+        margin-bottom: 10px;
         text-align: center;
     }
     h1{
