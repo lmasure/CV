@@ -318,7 +318,8 @@ body ul{
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-around;
-    }    
+    }  
+}
 
 /*responsive smartphone*/
 @media all and (max-width: 420px){
@@ -388,5 +389,4 @@ body ul{
     .recommandations li:nth-last-child(1){
         padding-right:0;
     }
-}
 }
