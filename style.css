@@ -2,8 +2,6 @@
 @font-face{
     src: url("/fonts/Cabin-Regular.ttf");
     src: url("/fonts/OldStandard-Regular.ttf");
-    font-family: 'Cabin-Regular';
-    font-family: 'OldStandard-Regular';
 }
 body{
     margin:0;
@@ -265,7 +263,6 @@ body ul{
         width: 100%;
         margin-top: 200px;
         text-align: center;
-        margin-bottom: -85px;
     }
     .contact ul{
         margin: 0;
@@ -343,9 +340,8 @@ body ul{
         top: 2px;
     }
     .bloc{
-        margin-left: -30px;
-        margin-right: -30px;
-        padding: 0;
+        margin: 0 auto;
+        padding: 0 20px;
         display: block;
         align-items: center;
         flex-direction: column;
@@ -363,6 +359,7 @@ body ul{
         width: 100%;    
      }
      .lieu{
+         width: 100%;
          display: block;
          margin:auto;
          text-align: center;
