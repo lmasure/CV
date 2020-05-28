@@ -2,6 +2,8 @@
 @font-face{
     src: url("/fonts/Cabin-Regular.ttf");
     src: url("/fonts/OldStandard-Regular.ttf");
+    font-family: 'Cabin-Regular';
+    font-family: 'OldStandard-Regular';
 }
 body{
     margin:0;
@@ -386,4 +388,5 @@ body ul{
     .recommandations li:nth-last-child(1){
         padding-right:0;
     }
+}
 }
